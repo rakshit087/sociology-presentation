@@ -5,7 +5,7 @@ import { arbitrum, goerli, hardhat, mainnet, optimism, polygon, sepolia } from '
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 export const SITE_CANONICAL = '#'
 export const SITE_EMOJI = ''
-export const SITE_NAME = 'Working Women Dillema'
+export const SITE_NAME = 'Working Mother Dilemma'
 export const SITE_TAGLINE = ''
 export const SITE_TITLE = 'TurboSlides - Web3 Presentation Tool'
 export const SITE_DESCRIPTION = 'Slide Decks with Web3 Capabilities'

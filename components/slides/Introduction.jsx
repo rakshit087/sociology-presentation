@@ -10,7 +10,7 @@ export const Introduction = ({ className }) => {
   const classes = classNames(className, 'Introduction', 'container mx-auto max-w-screen-xl', 'flex flex-col text-left min-h-[70vh]')
   return (
     <motion.div
-      className={'flex'}
+      className={'flex flex-col items-start'}
       initial="hidden"
       whileInView="show"
       animate="show"
@@ -24,7 +24,7 @@ export const Introduction = ({ className }) => {
         },
       }}>
       <motion.h1 className="text-6xl" variants={FADE_DOWN_ANIMATION_VARIANTS}>
-        Working Women Dilemma
+        Working Mother Dilemma
       </motion.h1>
     </motion.div>
   )

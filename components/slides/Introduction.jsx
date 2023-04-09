@@ -1,16 +1,11 @@
 import * as React from 'react'
-import classNames from 'clsx'
-import { SITE_DESCRIPTION, SITE_NAME } from '@/lib/constants'
-import { BranchColorMode } from '@/components/branch/BranchColorMode'
-import { DEPLOY_URL } from '@/lib/constants'
-import { FADE_DOWN_ANIMATION_VARIANTS, FADE_UP_LG_ANIMATION_VARIANTS } from '@/lib/design'
+import { FADE_DOWN_ANIMATION_VARIANTS, FADE_UP_ANIMATION_VARIANTS } from '@/lib/design'
 import { motion } from 'framer-motion'
 
-export const Introduction = ({ className }) => {
-  const classes = classNames(className, 'Introduction', 'container mx-auto max-w-screen-xl', 'flex flex-col text-left min-h-[70vh]')
+export const Introduction = () => {
   return (
     <motion.div
-      className={'flex flex-col items-start'}
+      className={'flex flex-col justify-center px-20 py-44'}
       initial="hidden"
       whileInView="show"
       animate="show"
@@ -24,8 +19,11 @@ export const Introduction = ({ className }) => {
         },
       }}>
       <motion.h1 className="text-6xl" variants={FADE_DOWN_ANIMATION_VARIANTS}>
-        Working Mother Dilemma
+        Introduction
       </motion.h1>
+      <motion.h6 className="mx-auto mt-16 text-4xl" variants={FADE_UP_ANIMATION_VARIANTS}>
+        "We expect women to work like they don't have children, and raise children as if they don't work"
+      </motion.h6>
     </motion.div>
   )
 }

@@ -43,18 +43,9 @@ const GlobalStyle = createGlobalStyle`
   }
 
   #slide {
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-
     width: 100vw;
     height: 100vh;
     padding: 1rem;
-
-    text-align: center;
-
-    -webkit-overflow-scrolling: touch;
   }
 
 `
@@ -212,20 +203,20 @@ export default function SlidePage({ children, next }) {
       <GlobalStyle />
       <Storage />
       <PresentationMode mode={mode} notes={slideNotes()} currentSlide={currentSlide}>
-        <div id="slide" style={{ width: '100%' }} className="w-full mx-20">
+        <div id="slide" style={{ width: '100%' }} className="w-full">
           {renderSlide()}
         </div>
       </PresentationMode>
-      <div className="absolute right-10 bottom-10 text-sm">
+      <div className="absolute text-sm right-10 bottom-10">
         <span
           onClick={swipeRight}
-          className="dark:hover:text-white dark:text-neutral-300 text-neutral-500 hover:text-neutral-800 cursor-pointer text-normal">
+          className="cursor-pointer dark:hover:text-white dark:text-neutral-300 text-neutral-500 hover:text-neutral-800 text-normal">
           Prev
         </span>
         <span className="mx-2 opacity-50">|</span>
         <span
           onClick={swipeLeft}
-          className="dark:hover:text-white dark:text-neutral-300 text-neutral-500 hover:text-neutral-800  cursor-pointer text-normal">
+          className="cursor-pointer dark:hover:text-white dark:text-neutral-300 text-neutral-500 hover:text-neutral-800 text-normal">
           Next
         </span>
       </div>

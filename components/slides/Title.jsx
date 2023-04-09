@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 export const Title = () => {
   return (
     <motion.div
-      className={'flex flex-col items-start'}
+      className={'flex flex-col px-20 h-screen justify-center'}
       initial="hidden"
       whileInView="show"
       animate="show"

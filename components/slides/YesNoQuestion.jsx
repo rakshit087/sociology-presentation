@@ -12,7 +12,7 @@ export const YesNoQuestion = ({ title }) => {
   const [question, setQuestion] = React.useState('')
   useEffect(() => {
     setQuestion(data.data ? data.data.filter((question) => question.title === title) : '')
-  }, [data])
+  }, [title])
   useEffect(() => {
     console.log(question)
     setFormattedData([

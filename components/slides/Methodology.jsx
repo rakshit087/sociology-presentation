@@ -27,8 +27,8 @@ export const Methodology = () => {
       </motion.h1>
       <motion.h6 className="mt-16 text-4xl" variants={FADE_UP_ANIMATION_VARIANTS}>
         Since we were not having enough responses in our group, we decided to survey the class for some responses. We surveyed the entire class and
-        got {data ? data.data.length - 1 : 0} (so far) responses of varying age groups. These responses were used to visualize the data and get a
-        better understanding of the data.
+        got {data ? data.data[0].responses.length : 0} responses (so far) of varying age groups. These responses were used to visualize the data and
+        get a better understanding of the data.
       </motion.h6>
     </motion.div>
   )

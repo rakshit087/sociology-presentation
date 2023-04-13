@@ -13,7 +13,11 @@ export function DataProvider({ children }) {
       const result = await fetch('/api/sheets')
       const data = await result.json()
       setData(data)
-      console.log(data)
+      setInterval(async () => {
+        const result = await fetch('/api/sheets')
+        const data = await result.json()
+        setData(data)
+      }, 5000)
     }
     fetchData()
   }, [])

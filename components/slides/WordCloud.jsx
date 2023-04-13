@@ -97,6 +97,7 @@ export const WordCloud = ({ title }) => {
             scale: 'sqrt',
             spiral: 'archimedean',
             transitionDuration: 1000,
+            deterministic: true,
           }}
         />
       </motion.div>
